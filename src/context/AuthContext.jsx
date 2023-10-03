@@ -11,8 +11,6 @@ export const AuthProvider = ({ children }) => {
     const [currentUser, setCurrentUser] = useState(null)
     const [loading, setloading] = useState(true)
 
-    console.log(currentUser)
-
     const signInWithGoogle = () =>{
         const provider = new GoogleAuthProvider();
         signInWithRedirect(auth, provider)

@@ -8,7 +8,7 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      await signInWithGoogle(); 
+      signInWithGoogle()
     } catch (error) {
       console.log(error)
     }
