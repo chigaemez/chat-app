@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.constainerWrapper{
+  @apply container mx-auto max-w-lg
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #272626);
+  border-radius: 8px;
+}
+
+.xscroll::-webkit-scrollbar {
+  height: 5px;
+}
+.xscroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(50deg, transparent, #272626);
+  border-radius: 8px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.line-before::before {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 18px; 
+  background-color: #000; 
+  margin-right: 8px;
+}
